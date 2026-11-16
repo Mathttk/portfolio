@@ -170,11 +170,13 @@ header {
 }
 
 .hero h1 {
-    font-size: 64px;
+    font-size: clamp(36px, 4.5vw, 60px);
     line-height: 1.15;
     color: var(--color-white);
     margin-bottom: 24px;
+    overflow-wrap: break-word;
 }
+
 
 .hero h1 span {
     color: var(--color-accent);
@@ -732,10 +734,6 @@ header {
         padding: 80px 0;
     }
 
-    .hero h1 {
-        font-size: 42px;
-    }
-
     .hero p {
         font-size: 16px;
     }
@@ -785,10 +783,6 @@ header {
 
     .hero {
         padding: 64px 0;
-    }
-
-    .hero h1 {
-        font-size: 36px;
     }
 
     .hero-subtitle {
